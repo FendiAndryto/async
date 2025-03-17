@@ -21,3 +21,13 @@
 - Fungsi `async()` dipanggil secara berurutan, menunggu satu sama lain untuk menyelesaikan, dan akhirnya memperbarui UI dengan hasil yang dihitung.
 
 ![Capture Hasil Praktikum 1 Soal 2](./assets/soal4.gif)
+
+## W5: Soal 5
+
+### Penjelasan Langkah 2
+
+- `Completer` digunakan untuk menyelesaikan `Future` secara manual setelah operasi `async` selesai.
+- `getNumber()` mengembalikan `Future<int>` yang menyelesaikan dengan `nilai 42` setelah penundaan `5 detik.`
+- `calculate()` melakukan penundaan selama `5 detik` dan kemudian menyelesaikan `Future` dengan `nilai 42.`
+
+![Capture Hasil Praktikum 1 Soal 2](./assets/soal5.gif)
