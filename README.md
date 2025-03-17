@@ -31,3 +31,12 @@
 - `calculate()` melakukan penundaan selama `5 detik` dan kemudian menyelesaikan `Future` dengan `nilai 42.`
 
 ![Capture Hasil Praktikum 1 Soal 2](./assets/soal5.gif)
+
+## W5: Soal 5
+
+### Penjelasan Perbedaan Langkah 2 dan Langkah 5-6
+
+- Langkah 2 adalah implementasi sederhana menggunakan `Completer` untuk menyelesaikan `Future` secara manual tanpa penanganan error eksplisit.
+- Langkah 5-6 memperkenalkan penanganan error menggunakan `try-catch` dan menggunakan `.then()` dan `.catchError()` untuk menangani hasil dan error secara lebih komprehensif. Ini memberikan lebih banyak kontrol terhadap alur eksekusi dan cara menangani kegagalan.
+
+![Capture Hasil Praktikum 1 Soal 2](./assets/soal6.gif)
