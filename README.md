@@ -41,8 +41,15 @@
 
 ![Capture Hasil Praktikum Soal 6](./assets/soal6.gif)
 
-## W5 Soal 7
+## W5: Soal 7
 
 ### Capture Hasil
 
 ![Capture Hasil Praktikum Soal 7](./assets/soal7.gif)
+
+## W5: Soal 8
+
+### Penjelasan code langkah 1 dan langkah 4
+
+- code `Langkah 1` lebih verbose dan menggunakan `FutureGroup` untuk mengelola beberapa Future secara manual.
+- code `Langkah 4` menggunakan `Future.wait`, yang membuat kode lebih ringkas, sederhana, dan mudah dibaca, karena `Future.wait` menangani koleksi dan penyelesaian beberapa `Future` secara otomatis.
