@@ -53,3 +53,9 @@
 
 - code `Langkah 1` lebih verbose dan menggunakan `FutureGroup` untuk mengelola beberapa Future secara manual.
 - code `Langkah 4` menggunakan `Future.wait`, yang membuat kode lebih ringkas, sederhana, dan mudah dibaca, karena `Future.wait` menangani koleksi dan penyelesaian beberapa `Future` secara otomatis.
+
+## W5: Soal 9
+
+### Capture Hasil
+
+![Capture Hasil Praktikum Soal 9](./assets/soal9.gif)
