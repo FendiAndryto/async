@@ -59,3 +59,11 @@
 ### Capture Hasil
 
 ![Capture Hasil Praktikum Soal 9](./assets/soal9.gif)
+
+## W5 Soal 10
+
+### Penjelasan `handleError` dan `returnError`
+
+- `returnError` Fungsi ini menyebabkan error dengan sengaja dan melemparkan exception setelah penundaan dua detik. Ia mengembalikan Future yang gagal.
+
+- `handleError` Fungsi ini berusaha menangani error yang dilemparkan oleh returnError(). Ia menangkap error tersebut di dalam blok catch dan menampilkan hasilnya dengan cara yang aman, serta mengeksekusi kode apapun di dalam blok finally.
