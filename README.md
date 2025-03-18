@@ -40,3 +40,9 @@
 - Langkah 5-6 memperkenalkan penanganan error menggunakan `try-catch` dan menggunakan `.then()` dan `.catchError()` untuk menangani hasil dan error secara lebih komprehensif. Ini memberikan lebih banyak kontrol terhadap alur eksekusi dan cara menangani kegagalan.
 
 ![Capture Hasil Praktikum Soal 6](./assets/soal6.gif)
+
+## W5 Soal 7
+
+### Capture Hasil
+
+![Capture Hasil Praktikum Soal 7](./assets/soal7.gif)
