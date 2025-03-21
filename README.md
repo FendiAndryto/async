@@ -112,7 +112,7 @@
 
 ### Penjelasan Soal 17
 
-- Ketika `Button` ini klik, warna latar belakang aplikasi akan diubah menjadi warna yang di pilih di `Button`. Kemudian, dialog akan ditutup dengan memanggil Navigator.pop(context, color), dan nilai warna tersebut akan dikembalikan ke halaman utama.
+- Ketika `Button` ini klik, warna latar belakang aplikasi akan diubah menjadi warna yang di pilih di `Button`. Kemudian, dialog akan ditutup dengan memanggil `Navigator.pop(context, color)`, dan nilai warna tersebut akan dikembalikan ke halaman utama.
 
 ### Capture Hasil
 
