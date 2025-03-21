@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:async_load/geolocation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
@@ -6,22 +7,6 @@ import 'package:async/async.dart';
 
 void main() {
   runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Future Demo Fendi',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: const FuturePage(),
-    );
-  }
 }
 
 class FuturePage extends StatefulWidget {
@@ -75,24 +60,24 @@ class _FuturePageState extends State<FuturePage> {
     });
   }
 
-  // void returnFG() {
-  //   FutureGroup<int> futureGroup = FutureGroup<int>();
-  //   futureGroup.add(returnOneAsync());
-  //   futureGroup.add(returnTwoAsync());
-  //   futureGroup.add(returnThreeAsync());
-  //   futureGroup.close();
-  //   futureGroup.future.then((List<int> value) {
-  //     int total = 0;
-  //     for (var element in value) {
-  //       total += element;
-  //     }
-  //     setState(() {
-  //       result = total.toString();
-  //     });
-  //   });
-  // }
-
   void returnFG() {
+    FutureGroup<int> futureGroup = FutureGroup<int>();
+    futureGroup.add(returnOneAsync());
+    futureGroup.add(returnTwoAsync());
+    futureGroup.add(returnThreeAsync());
+    futureGroup.close();
+    futureGroup.future.then((List<int> value) {
+      int total = 0;
+      for (var element in value) {
+        total += element;
+      }
+      setState(() {
+        result = total.toString();
+      });
+    });
+  }
+
+  void returnFGG() {
     Future.wait<int>([
       returnOneAsync(),
       returnTwoAsync(),
@@ -159,6 +144,7 @@ class _FuturePageState extends State<FuturePage> {
                 //   result = 'An error occurred';
                 // });
                 // returnFG();
+                // returnFGG();
                 handleError().then((value) {
                   setState(() {
                     result = 'Success';
@@ -186,5 +172,21 @@ class _FuturePageState extends State<FuturePage> {
     const path = '/books/v1/volumes/u3F8EAAAQBAJ';
     Uri url = Uri.https(authority, path);
     return http.get(url);
+  }
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Future Demo Fendi',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: const LocationScreen(),
+    );
   }
 }

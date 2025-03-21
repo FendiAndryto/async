@@ -67,3 +67,13 @@
 - `returnError` Fungsi ini menyebabkan error dengan sengaja dan melemparkan exception setelah penundaan dua detik. Ia mengembalikan Future yang gagal.
 
 - `handleError` Fungsi ini berusaha menangani error yang dilemparkan oleh returnError(). Ia menangkap error tersebut di dalam blok catch dan menampilkan hasilnya dengan cara yang aman, serta mengeksekusi kode apapun di dalam blok finally.
+
+## W5 Soal 12
+
+### Penjelasan Soal 12
+
+- `Geolocator` di Flutter tidak dapat bekerja dengan baik di browser karena browser tidak dapat langsung mengakses perangkat keras seperti GPS, yang ada pada perangkat seluler. Di browser, geolokasi bergantung pada `API` geolokasi web yang berbeda dari yang digunakan di perangkat mobile.
+
+### Capture Hasil
+
+![Capture Hasil Praktikum Soal 12](./assets/soal12.gif)
