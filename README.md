@@ -97,3 +97,13 @@
 ### Capture Hasil
 
 ![Capture Hasil Praktikum Soal 14](./assets/soal13.gif)
+
+## W5 Soal 16
+
+### Penjelasan Soal 16
+
+- Saat `Button` di klik tidak ada perubahan, karena tidak ada kondisi yang mengubah jika button di klik, hanya ada variable color yang tidak di deklarasikan dengan isi warna dan sudah pasti error.
+
+### Capture Hasil
+
+![Capture Hasil Praktikum Soal 16](./assets/soal16.gif)
