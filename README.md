@@ -87,3 +87,13 @@
 ### Capture Hasil
 
 ![Capture Hasil Praktikum Soal 13](./assets/soal13.gif)
+
+## W5 Soal 14
+
+### Penjelasan Soal 14
+
+- Perbedaan UI hanya menampilkan loading screen saja, karena tidak ada return untuk memanggil geolocation. Hanya menambahkan kondisi dimana state error dan text 'Something terrible happened!'
+
+### Capture Hasil
+
+![Capture Hasil Praktikum Soal 14](./assets/soal13.gif)
