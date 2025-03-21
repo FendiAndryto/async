@@ -77,3 +77,13 @@
 ### Capture Hasil
 
 ![Capture Hasil Praktikum Soal 12](./assets/soal12.gif)
+
+## W5 Soal 13
+
+### Penjelasan Soal 13
+
+- Perbedaan UI hanya menampilkan loading screen saja, karena tidak ada return untuk memanggil geolocation.
+
+### Capture Hasil
+
+![Capture Hasil Praktikum Soal 13](./assets/soal13.gif)

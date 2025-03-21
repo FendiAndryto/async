@@ -4,7 +4,7 @@
     <!-- Add location permissions outside of the application tag -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!-- Or if you only need approximate location -->
-    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:label="async_load"
