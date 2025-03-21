@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:async_load/geolocation.dart';
+import 'package:async_load/navigation_dialog.dart';
 import 'package:async_load/navigation_first.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
@@ -187,7 +188,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const NavigationFirst(),
+      home: const NavigationDialog(),
     );
   }
 }

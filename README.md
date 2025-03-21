@@ -107,3 +107,13 @@
 ### Capture Hasil
 
 ![Capture Hasil Praktikum Soal 16](./assets/soal16.gif)
+
+## W5 Soal 17
+
+### Penjelasan Soal 17
+
+- Ketika `Button` ini klik, warna latar belakang aplikasi akan diubah menjadi warna yang di pilih di `Button`. Kemudian, dialog akan ditutup dengan memanggil Navigator.pop(context, color), dan nilai warna tersebut akan dikembalikan ke halaman utama.
+
+### Capture Hasil
+
+![Capture Hasil Praktikum Soal 16](./assets/soal17.gif)
